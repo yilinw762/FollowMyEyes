@@ -1,6 +1,6 @@
 from PyQt5.QtWidgets import QWidget, QLabel, QVBoxLayout
 from PyQt5.QtCore import QTimer, Qt
-from PyQt5.QtGui import QImage, QPixmap, QPainter, QColor, QFont
+from PyQt5.QtGui import QImage, QPixmap, QPainter, QColor, QFont, QIcon
 import cv2
 import numpy as np
 from core.tracker import GazeTracker
@@ -9,6 +9,7 @@ class EyeTrackerApp(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Eye Tracker with Blink Detection")
+        self.setWindowIcon(QIcon("assets/eyeTracker.png"))
         self.setGeometry(100, 100, 800, 600)
 
         self.video_label = QLabel(self)
