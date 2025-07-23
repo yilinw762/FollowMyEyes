@@ -1,7 +1,7 @@
 import cv2
 import numpy as np
 import mediapipe as mp
-from core.utils import compute_ear, get_screen_quadrant
+from cores.utils import compute_ear, get_screen_quadrant
 
 class GazeTracker:
     def __init__(self):

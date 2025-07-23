@@ -3,7 +3,7 @@ from PyQt5.QtCore import QTimer, Qt
 from PyQt5.QtGui import QImage, QPixmap, QPainter, QColor, QFont, QIcon
 import cv2
 import numpy as np
-from core.tracker import GazeTracker
+from cores.trackers import GazeTracker
 
 class EyeTrackerApp(QWidget):
     def __init__(self):
